@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinusovka</title>
+    <style>
+        input {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Sinusovka</h3>
+    <button id="width+">Width +</button><button id="width-">Width -</button>
+    <button id="height+">Height +</button><button id="height-">Height -</button><br>
+    <p>Přiblížení: <input type="number" id="scale" value="1" min="1" step="0.1"></p>
+    <p>y(t) = <input id="amplitude" type="number" value="70"> * sin(<input id="omega" type="number" value="100">π * t + <input id="fi" type="number" value="0" step="0.5">π)</p>
+    <canvas id="canvas" width="1000" height="400"></canvas>
+</body>
+<script src="script.js"></script>
+</html>
